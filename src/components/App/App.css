@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Brown Sugar";
+  src: url(../../vendor/Brown\ Sugar\ .otf);
+}
+
+@font-face {
+  font-family: "CutiveMono";
+  src: url(../../vendor/CutiveMono-Regular.ttf);
+}
+
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Brown Sugar";
+  background-color: rgba(245, 240, 232, 1);
+}
+
+.page__content {
+  background-color: rgba(245, 240, 232, 1);
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px;
+}

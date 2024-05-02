@@ -1,0 +1,54 @@
+.header {
+  font-family: "CutiveMono";
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 86px;
+  position: fixed;
+  background-color: rgba(245, 240, 232, 1);
+}
+
+.header__menu {
+  width: 14vw;
+  height: 7vw;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: rgba(245, 240, 232, 1);
+  font-size: 2vw;
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s;
+}
+
+.header__menu:hover {
+  width: 17.25vw;
+}
+
+.header__menu_text {
+  padding-right: 50px;
+  margin-left: 30px;
+  transition: 0.3s;
+  margin-top: 33px;
+}
+
+.header__menu_text:hover {
+  margin-left: 80px;
+}
+
+.header__menu-about {
+  background-color: rgba(174, 158, 1, 1);
+}
+
+.header__menu-resume {
+  background-color: rgba(199, 175, 201, 1);
+}
+
+.header__menu-skills {
+  background-color: rgba(255, 145, 100, 1);
+}
+
+.header__menu-contact {
+  background-color: rgba(175, 204, 160, 1);
+}
