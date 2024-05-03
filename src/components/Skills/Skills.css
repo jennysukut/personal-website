@@ -1,0 +1,64 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fadeInSlower {
+  animation: fadeIn ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fadeInSlowest {
+  animation: fadeIn ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__lines {
+  display: block;
+  margin: auto;
+  padding-right: 294px;
+  height: 2007px;
+  position: relative;
+}
+
+.skills__circle-1 {
+  width: 385px;
+  height: 385px;
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+  margin-top: 55px;
+}
+
+.skills__circle-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  margin: 375px 425px 0 0;
+}
+
+.skills__circle-3 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  margin: 674px 191px 0 0;
+}

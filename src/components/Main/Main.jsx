@@ -6,7 +6,7 @@ function Main() {
   return (
     <div className="main">
       <div className="main__title">
-        <h3 className="main__title-name">Jennifer Sukut</h3>
+        <h3 className="main__title-name fadeInFromRight">Jennifer Sukut</h3>
         <div className="main__title-details">
           <StaggerTextReveal
             text={"web developer"}
@@ -15,9 +15,9 @@ function Main() {
           />
         </div>
       </div>
-      <div className="main__details-and-lines">
+      <div className="main__details-and-lines fadeIn">
         <img src={whiteLines} alt="lines" className="main__lines" />
-        <div className="main__details">
+        <div className="main__details fadeInFromLeft">
           Bringing passion, creativity, quality designs, and functionality to
           web-based applications.
         </div>

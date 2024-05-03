@@ -1,12 +1,15 @@
 .header {
-  position: absolute;
+  position: fixed;
 }
 
 .header__nav {
   font-family: "FiraMono-Regular";
   font-size: 22px;
-  color: rgba(245, 240, 232, 1);
   letter-spacing: 5px;
   margin: 55px 0 0 45px;
   line-height: 17px;
+}
+
+.header__nav-main {
+  color: rgba(245, 240, 232, 1);
 }
