@@ -4,20 +4,25 @@
 }
 
 @font-face {
-  font-family: "CutiveMono";
-  src: url(../../vendor/CutiveMono-Regular.ttf);
+  font-family: "FiraMono-Regular";
+  src: url(../../vendor/FiraMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "FiraMono-Medium";
+  src: url(../../vendor/FiraMono-Medium.ttf);
+}
+
+@font-face {
+  font-family: "FiraMono-Bold";
+  src: url(../../vendor/FiraMono-Bold.ttf);
 }
 
 .page {
   min-width: 100vw;
   min-height: 100vh;
-  font-family: "Brown Sugar";
-  background-color: rgba(245, 240, 232, 1);
-}
-
-.page__content {
+  font-family: "FiraMono-Regular";
   background-color: rgba(245, 240, 232, 1);
   display: flex;
   flex-direction: column;
-  margin-left: 260px;
 }

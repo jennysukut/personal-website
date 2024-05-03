@@ -1,0 +1,56 @@
+.main {
+  background-image: url("../../images/GradientBackgroundMain.svg");
+  width: 100vw;
+  max-height: 1415px;
+  max-width: 1440px;
+  color: rgba(245, 240, 232, 1);
+}
+
+.main__title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+
+.main__title-name {
+  font-family: "Brown Sugar";
+  font-size: 130px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  max-width: 686px;
+  text-align: end;
+  margin-bottom: 0;
+}
+
+.main__title-details {
+  font-size: 27px;
+  letter-spacing: 5px;
+  position: relative;
+  left: 230px;
+  bottom: 75px;
+}
+
+.main__lines {
+  display: block;
+  margin: auto;
+  padding-left: 200px;
+  height: 981px;
+  position: relative;
+}
+
+.main__details {
+  font-family: "FiraMono-Regular";
+  font-size: 23px;
+  letter-spacing: 5px;
+  max-width: 570px;
+  position: absolute;
+  align-self: center;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 350px;
+}

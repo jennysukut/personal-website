@@ -2,20 +2,14 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className="header">
-      <div className="header__menu header__menu-about">
-        <p className="header__menu_text">about</p>
+    <div className="header">
+      <div className="header__nav">
+        <p className="header__nav_skills">skills</p>
+        <p className="header__nav_resume">resume</p>
+        <p className="header__nav_about">about</p>
+        <p className="header__nav_contact">contact</p>
       </div>
-      <div className="header__menu header__menu-resume">
-        <p className="header__menu_text">resume</p>
-      </div>
-      <div className="header__menu header__menu-skills">
-        <p className="header__menu_text">skills</p>
-      </div>
-      <div className="header__menu header__menu-contact">
-        <p className="header__menu_text">contact</p>
-      </div>
-    </header>
+    </div>
   );
 }
 
