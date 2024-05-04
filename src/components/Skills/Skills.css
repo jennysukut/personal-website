@@ -70,9 +70,7 @@
   letter-spacing: 3px;
   text-align: end;
   grid-row: 1;
-  /*border-top: solid 4px;*/
   border-color: rgba(199, 175, 201, 1);
-  /*padding-right: 50px;*/
   margin-top: 200px;
 }
 
@@ -100,9 +98,9 @@
   font-size: 27px;
   letter-spacing: 3px;
   border-left: solid 4px;
-  /*border-top: solid 4px;*/
   border-color: rgba(199, 175, 201, 1);
   padding-left: 35px;
+  margin-bottom: 50px;
 }
 
 .circle-container-2 {

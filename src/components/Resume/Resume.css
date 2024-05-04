@@ -1,13 +1,130 @@
 .resume {
   background-image: url(../../images/GradientBackgroundResume.svg);
-  background-repeat: no-repeat;
-  height: 100vh;
-  max-height: 1330px;
+  background-size: cover;
   color: rgba(245, 240, 232, 1);
+  display: grid;
+  grid-template-columns: 41.5% 58.5%;
 }
 
-.resume__lines {
-  width: 952px;
-  height: 1328px;
-  margin-left: 7.8vw;
+.resume__empty-div {
+  border-right: solid 4px;
+  border-color: rgba(245, 240, 232, 1);
+  grid-row: 1;
+}
+
+.resume__title {
+  font-family: "Brown Sugar";
+  font-size: 130px;
+  margin-top: 83px;
+  border-bottom: solid 4px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+  align-self: baseline;
+  grid-row: 1;
+}
+
+.resume__skill-yrs {
+  border-right: solid 4px;
+  border-color: rgba(245, 240, 232, 1);
+  text-align: end;
+  margin-top: -80px;
+  grid-row: 2;
+}
+
+.resume__skill-yrs-list {
+  line-height: 16px;
+  /*margin-top: 250px;*/
+  padding-right: 50px;
+}
+
+.resume__skill-yrs-work {
+  font-size: 27px;
+  font-family: "FiraMono-Bold";
+}
+
+.resume__skill-yrs-timeline {
+  font-family: "FiraMono-Regular";
+  font-size: 25px;
+  font-style: italic;
+}
+
+.resume__workExperience {
+  grid-row: 2;
+  padding-left: 50px;
+  max-width: 550px;
+}
+
+.resume__workExperience_title {
+  font-family: "Inter";
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.resume__workExperience_list {
+  font-family: "FiraMono-Regular";
+  font-size: 24px;
+  letter-spacing: 5px;
+  margin: 0;
+  line-height: 15px;
+  margin-top: 50px;
+}
+
+.workExperience__position {
+  font-family: "FiraMono-Medium";
+  font-size: 27px;
+  letter-spacing: 5px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.workExperience__company {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.workExperience__timeline {
+  margin: 0;
+  font-style: italic;
+}
+
+.resume__education {
+  grid-row: 3;
+  text-align: end;
+  padding-right: 50px;
+  padding-top: 35px;
+  margin-top: -700px;
+  border-top: solid 4px;
+  font-size: 27px;
+  letter-spacing: 5px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+
+.resume__education_title {
+  font-family: "Inter";
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.education__item {
+  margin-top: 50px;
+}
+
+.education__program {
+  font-size: 30px;
+  font-family: "FiraMono-Medium";
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.education__school {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.education__location {
+  margin: 0;
 }
