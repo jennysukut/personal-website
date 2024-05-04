@@ -33,9 +33,10 @@
 .skills__lines {
   display: block;
   margin: auto;
-  padding-right: 294px;
   height: 2007px;
   position: relative;
+  max-width: 952px;
+  margin-left: 7.761vw;
 }
 
 .skills__circle-1 {
@@ -61,4 +62,116 @@
   position: absolute;
   right: 0;
   margin: 674px 191px 0 0;
+}
+
+.skills__specializedSkills_container {
+  position: absolute;
+  text-align: end;
+  margin-left: 100px;
+  margin-top: 300px;
+  color: rgba(255, 145, 100, 1);
+  font-size: 27px;
+  letter-spacing: 3px;
+}
+
+.specializedSkills__title-small {
+  margin-bottom: 0;
+}
+
+.specializedSkills__title-large {
+  font-family: "Brown Sugar";
+  font-size: 115px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.specializedSkills__list {
+  list-style-position: inside;
+  direction: rtl;
+  text-align: start;
+  padding: 0;
+  margin-top: 0;
+}
+
+.specializedSkills__skill {
+  font-family: "FiraMono-Medium";
+  line-height: 50px;
+}
+
+.skills__generalSkills_container {
+  position: absolute;
+  text-align: end;
+  color: rgba(199, 175, 201, 1);
+  font-size: 27px;
+  letter-spacing: 3px;
+  margin-top: 825px;
+  margin-left: 160px;
+}
+
+.generalSkills__title-large {
+  font-family: "Brown Sugar";
+  font-size: 115px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.generalSkills__title-small {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.generalSkills__list {
+  list-style-position: inside;
+  direction: rtl;
+  text-align: start;
+  padding: 0;
+  margin-top: 0;
+}
+
+.generalSkills__skill {
+  font-family: "FiraMono-Medium";
+  line-height: 50px;
+}
+
+.skills__codingLAT_container {
+  position: absolute;
+  color: rgba(174, 158, 1, 1);
+  font-size: 27px;
+  letter-spacing: 3px;
+  right: 0;
+  margin-right: 230px;
+  margin-top: 870px;
+}
+
+.codingLAT__title {
+  font-family: "Inter";
+  font-size: 45px;
+  letter-spacing: 5px;
+  max-width: 575px;
+  margin-bottom: 0;
+}
+
+.codingLAT__list {
+  list-style: none;
+  font-family: "FiraMono-Medium";
+  line-height: 47px;
+}
+
+.skills__circle-4 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  margin-top: 1500px;
+  margin-left: 300px;
+}
+
+.skills__circle-5 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 1670px;
 }

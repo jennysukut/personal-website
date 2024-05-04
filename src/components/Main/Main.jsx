@@ -16,10 +16,11 @@ function Main() {
         </div>
       </div>
       <div className="main__details-and-lines fadeIn">
-        <img src={whiteLines} alt="lines" className="main__lines" />
-        <div className="main__details fadeInFromLeft">
-          Bringing passion, creativity, quality designs, and functionality to
-          web-based applications.
+        <div className="main__details-container">
+          <p className="main__details-text fadeInFromLeft">
+            Bringing passion, creativity, quality designs, and functionality to
+            web-based applications.
+          </p>
         </div>
       </div>
     </div>

@@ -1,0 +1,13 @@
+.resume {
+  background-image: url(../../images/GradientBackgroundResume.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 1330px;
+  color: rgba(245, 240, 232, 1);
+}
+
+.resume__lines {
+  width: 952px;
+  height: 1328px;
+  margin-left: 7.8vw;
+}
