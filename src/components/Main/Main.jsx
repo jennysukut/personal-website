@@ -15,13 +15,12 @@ function Main() {
           />
         </div>
       </div>
-      <div className="main__details-and-lines fadeIn">
-        <div className="main__details-container">
-          <p className="main__details-text fadeInFromLeft">
-            Bringing passion, creativity, quality designs, and functionality to
-            web-based applications.
-          </p>
-        </div>
+      <div className="main__details-container">
+        <div className="main__details-empty-div"></div>
+        <p className="main__details-text fadeInFromLeft">
+          Bringing passion, creativity, quality designs, and functionality to
+          web-based applications.
+        </p>
       </div>
     </div>
   );

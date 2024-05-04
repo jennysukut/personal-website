@@ -26,66 +26,65 @@
 }
 
 .skills {
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;*/
-}
-
-.skills-test {
   display: grid;
   grid-template-columns: 41.5% 58.5%;
   grid-template-rows: auto;
 }
 
-.skills__container-test {
-  height: 2007px;
-  /*border-left: solid 4px;
-  border-color: rgba(199, 175, 201, 1);*/
-}
-
-.skills__circle-container-test {
+.skills__circle-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   grid-row: 1;
-  padding: 50px;
   border-left: solid 4px;
   border-color: rgba(199, 175, 201, 1);
+  padding-top: 50px;
+  padding-right: 50px;
 }
 
-.skills__circle-1-test {
-  width: 385px;
-  height: 385px;
+.skills__circle-container:after {
+  content: "";
+  display: block;
+  width: 70%;
+  border-bottom: 4px solid rgba(199, 175, 201, 1);
+  left: 0;
+  margin-right: auto;
 }
 
-.skills__circle-2-test {
+.skills__circle-2 {
   width: 300px;
   height: 300px;
   align-self: flex-start;
-  margin-left: 50px;
-  margin-bottom: 50px;
+  margin-left: 150px;
 }
 
-.skills__circle-3-test {
+.skills__circle-3 {
   width: 200px;
   height: 200px;
-  position: absolute;
-  margin-top: 600px;
+  margin-bottom: -55px;
 }
 
-.skills__specializedSkills_container-test {
+.skills__specializedSkills_container {
   color: rgba(255, 145, 100, 1);
   font-size: 27px;
   letter-spacing: 3px;
   text-align: end;
   grid-row: 1;
-  border-top: solid 4px;
+  /*border-top: solid 4px;*/
   border-color: rgba(199, 175, 201, 1);
-  padding-right: 50px;
+  /*padding-right: 50px;*/
   margin-top: 200px;
 }
 
-.skills__generalSkills_container-test {
+.skills__specializedSkills_container:before {
+  content: "";
+  display: block;
+  width: 90%;
+  border-bottom: 4px solid rgba(199, 175, 201, 1);
+  margin-left: auto;
+}
+
+.skills__generalSkills_container {
   text-align: end;
   color: rgba(199, 175, 201, 1);
   font-size: 27px;
@@ -95,75 +94,28 @@
   margin-top: -70px;
 }
 
-.skills__codingLAT_container-test {
+.skills__codingLAT_container {
   grid-row: 2;
   color: rgba(174, 158, 1, 1);
   font-size: 27px;
   letter-spacing: 3px;
   border-left: solid 4px;
-  border-top: solid 4px;
+  /*border-top: solid 4px;*/
   border-color: rgba(199, 175, 201, 1);
   padding-left: 35px;
 }
 
-.circle-container-test-2 {
+.circle-container-2 {
+  margin-top: -400px;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  margin-top: 120px;
-}
-
-.skills__original {
-  margin-top: 500px;
-}
-
-.skills__lines {
-  display: block;
-  margin: auto;
-  height: 2007px;
-  position: relative;
-  max-width: 952px;
-  margin-left: 7.761vw;
-}
-
-.skills__circle-1 {
-  width: 385px;
-  height: 385px;
-  position: absolute;
-  right: 0;
-  margin-right: 60px;
-  margin-top: 55px;
-}
-
-.skills__circle-2 {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  right: 0;
-  margin: 375px 425px 0 0;
-}
-
-.skills__circle-3 {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  right: 0;
-  margin: 674px 191px 0 0;
-}
-
-.skills__specializedSkills_container {
-  position: absolute;
-  text-align: end;
-  margin-left: 100px;
-  margin-top: 300px;
-  color: rgba(255, 145, 100, 1);
-  font-size: 27px;
-  letter-spacing: 3px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .specializedSkills__title-small {
   margin-bottom: 0;
   margin-top: 50px;
+  margin-right: 50px;
 }
 
 .specializedSkills__title-large {
@@ -172,6 +124,7 @@
   letter-spacing: 5px;
   font-weight: 400;
   margin: 0;
+  margin-right: 50px;
 }
 
 .specializedSkills__list {
@@ -180,21 +133,12 @@
   text-align: start;
   padding: 0;
   margin-top: 0;
+  margin-right: 50px;
 }
 
 .specializedSkills__skill {
   font-family: "FiraMono-Medium";
   line-height: 50px;
-}
-
-.skills__generalSkills_container {
-  position: absolute;
-  text-align: end;
-  color: rgba(199, 175, 201, 1);
-  font-size: 27px;
-  letter-spacing: 3px;
-  margin-top: 825px;
-  margin-left: 160px;
 }
 
 .generalSkills__title-large {
@@ -223,16 +167,6 @@
   line-height: 50px;
 }
 
-.skills__codingLAT_container {
-  position: absolute;
-  color: rgba(174, 158, 1, 1);
-  font-size: 27px;
-  letter-spacing: 3px;
-  right: 0;
-  margin-right: 230px;
-  margin-top: 870px;
-}
-
 .codingLAT__title {
   font-family: "Inter";
   font-size: 45px;
@@ -250,16 +184,11 @@
 .skills__circle-4 {
   width: 200px;
   height: 200px;
-  position: absolute;
-  left: 0;
-  margin-top: 1500px;
-  margin-left: 300px;
+  margin-top: -120px;
 }
 
 .skills__circle-5 {
   width: 300px;
   height: 300px;
-  position: absolute;
-  margin-left: 75px;
-  margin-top: 1670px;
+  margin-left: 50px;
 }

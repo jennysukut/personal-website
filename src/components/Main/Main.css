@@ -43,9 +43,9 @@
 
 .main {
   background-image: url("../../images/GradientBackgroundMain.svg");
+  background-size: cover;
   width: 100vw;
-  max-height: 1415px;
-  max-width: 1440px;
+  min-width: 100%;
   color: rgba(245, 240, 232, 1);
 }
 
@@ -75,17 +75,15 @@
   bottom: 75px;
 }
 
-.main__details-and-lines {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main__details-container {
+  display: grid;
+  grid-template-columns: 41.5% 58.5%;
+  height: 981px;
 }
 
-.main__details-container {
-  height: 981px;
-  border-left: solid 4px;
-  margin-left: 26vw;
-  padding: 0;
+.main__details-empty-div {
+  border-right: solid 4px;
+  border-color: rgba(245, 240, 232, 1);
 }
 
 .main__details-text {
@@ -93,8 +91,9 @@
   font-size: 23px;
   letter-spacing: 5px;
   max-width: 570px;
-  padding-left: 35px;
   border-top: solid 4px;
+  border-color: rgba(245, 240, 232, 1);
+  margin-top: 500px;
   padding-top: 35px;
-  margin-top: 550px;
+  padding-left: 35px;
 }
