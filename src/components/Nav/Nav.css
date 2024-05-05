@@ -13,4 +13,10 @@
   letter-spacing: 5px;
   margin: 55px 0 0 45px;
   line-height: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__links_skills {
+  margin-top: 20px;
 }

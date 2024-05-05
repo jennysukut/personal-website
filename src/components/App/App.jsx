@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { Routes, Route } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import "./App.css";
 import Nav from "../Nav/Nav";

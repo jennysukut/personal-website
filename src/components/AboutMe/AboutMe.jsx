@@ -30,7 +30,7 @@ function AboutMe() {
       "Reading, Baking, Jamming to Fantastic Tunes, Polymer Clay Jewelry Creating, Long Walks, Beach Time with Family, Daydreaming, Crafting a Daily Colorful Outfit, Sharing Stories, Enjoying the Moments that Make Me Human.",
   };
   return (
-    <div className="aboutMe">
+    <div name="about" className="aboutMe">
       <Nav />
       <div className="aboutMe__empty-div"></div>
       <div className="aboutMe__main">

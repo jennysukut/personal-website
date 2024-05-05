@@ -3,7 +3,7 @@ import Nav from "../Nav/Nav";
 
 function Contact() {
   return (
-    <div className="contact">
+    <div name="contact" className="contact">
       <Nav />
       <div className="contactMe__title">
         <p className="contactMe__title-small">

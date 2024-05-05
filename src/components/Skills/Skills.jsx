@@ -48,7 +48,7 @@ function Skills() {
   ];
 
   return (
-    <div className="skills">
+    <div name="skills" className="skills">
       <Nav />
       <div className="skills__specializedSkills_container">
         <p className="specializedSkills__title-small">specialized</p>

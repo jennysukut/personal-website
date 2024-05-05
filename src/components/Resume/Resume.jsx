@@ -60,7 +60,7 @@ function Resume() {
   ];
 
   return (
-    <div className="resume">
+    <div name="resume" className="resume">
       <Nav />
       <div className="resume__empty-div"></div>
       <p className="resume__title">RESUME</p>
