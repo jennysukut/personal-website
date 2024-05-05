@@ -92,3 +92,8 @@
 .copyright-info {
   text-align: right;
 }
+
+.allgreen {
+  animation: lilBounce ease 3.5s;
+  animation-iteration-count: 1;
+}

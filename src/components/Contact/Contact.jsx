@@ -1,11 +1,44 @@
 import "./Contact.css";
 import Nav from "../Nav/Nav";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 function Contact() {
+  //   const test1 = document.querySelector("#test");
+  //   console.log(test1);
+
+  //   document.addEventListener("DOMContentLoaded", function () {
+  //     const observer = new IntersectionObserver(
+  //       (entries) => {
+  //         entries.forEach((entry) => {
+  //           entry.target.classList.toggle("allgreen", entry.isIntersecting);
+  //           if (entry.isIntersecting) observer.unobserve(entry.target);
+  //         });
+  //         console.log(entries);
+  //       },
+  //       { threshold: 0.5 }
+  //     );
+
+  //     observer.observe(test1);
+  //   });
+
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         entry.target.classList.toggle("allgreen", entry.isIntersecting);
+  //         if (entry.isIntersecting) observer.unobserve(entry.target);
+  //       });
+  //       console.log(entries);
+  //     },
+  //     { threshold: 0.5 }
+  //   );
+
+  //   observer.observe(test1);
+
   return (
-    <div name="contact" className="contact">
+    <div id="test" name="contact" className="contact">
       <Nav />
-      <div className="contactMe__title">
+      <div id="test1" className="contactMe__title">
         <p className="contactMe__title-small">
           interested in working together?
         </p>

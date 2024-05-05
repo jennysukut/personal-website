@@ -66,9 +66,10 @@ function Skills() {
 
       <div className="skills__circle-container">
         <img
+          id="testcircle"
           src={gradientCircle1}
           alt="gradientCircle1"
-          className="skills__circle-1 rotate "
+          className="skills__circle-1 "
         />
         <img
           src={gradientCircle2}
