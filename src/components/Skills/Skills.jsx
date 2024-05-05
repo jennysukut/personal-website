@@ -1,4 +1,5 @@
 import "./Skills.css";
+import { useState, useEffect } from "react";
 import purpleLines from "../../images/PurpleLinesSkills.svg";
 import gradientCircle1 from "../../images/GradientCircle1.svg";
 import gradientCircle2 from "../../images/GradientCircle2.svg";
@@ -48,7 +49,7 @@ function Skills() {
   ];
 
   return (
-    <div name="skills" className="skills">
+    <div id="skillsComp" name="skills" className="skills">
       <Nav />
       <div className="skills__specializedSkills_container">
         <p className="specializedSkills__title-small">specialized</p>
@@ -64,22 +65,24 @@ function Skills() {
         </ul>
       </div>
 
-      <div className="skills__circle-container">
+      <div id="skills__circle-container" className="skills__circle-container">
         <img
-          id="testcircle"
+          id="skills__circle-1"
           src={gradientCircle1}
           alt="gradientCircle1"
           className="skills__circle-1 "
         />
         <img
+          id="skills__circle-2"
           src={gradientCircle2}
           alt="gradientCircle2"
-          className="skills__circle-2 bounceFromLeft"
+          className="skills__circle-2"
         />
         <img
+          id="skills__circle-3"
           src={gradientCircle3}
           alt="gradientCircle3"
-          className="skills__circle-3 slideUp"
+          className="skills__circle-3"
         />
       </div>
 
