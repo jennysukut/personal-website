@@ -68,17 +68,17 @@ function Skills() {
         <img
           src={gradientCircle1}
           alt="gradientCircle1"
-          className="skills__circle-1 fadeIn"
+          className="skills__circle-1 rotate "
         />
         <img
           src={gradientCircle2}
           alt="gradientCircle2"
-          className="skills__circle-2 fadeInSlowest"
+          className="skills__circle-2 bounceFromLeft"
         />
         <img
           src={gradientCircle3}
           alt="gradientCircle3"
-          className="skills__circle-3 fadeInSlower"
+          className="skills__circle-3 slideUp"
         />
       </div>
 

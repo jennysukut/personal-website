@@ -7,6 +7,52 @@
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes bounceFromLeft {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.slideUp {
+  animation: slideUp ease 2s;
+  animation-iteration-count: 1;
+}
+
+.bounceFromLeft {
+  animation: bounceFromLeft ease 2s;
+  animation-iteration-count: 1;
+}
+
+.rotate {
+  animation: rotate ease 2s;
+  animation-iteration-count: 1;
+}
+
 .fadeIn {
   animation: fadeIn ease 2s;
   animation-iteration-count: 1;
@@ -71,7 +117,7 @@
   text-align: end;
   grid-row: 1;
   border-color: rgba(199, 175, 201, 1);
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 .skills__specializedSkills_container:before {

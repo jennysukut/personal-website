@@ -1,3 +1,49 @@
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes lilBounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.fadeInFromRight {
+  animation: fadeInFromRight ease 3.5s;
+  animation-iteration-count: 1;
+}
+
+.lilBounce {
+  animation: lilBounce ease 1.5s;
+  animation-iteration-count: 1;
+}
+
+.fadeIn {
+  animation: fadeIn ease 3.5s;
+  animation-iteration-count: 1;
+}
+
 .contact {
   background: url(../../images/GradientBackgroundFooter.svg);
   background-size: cover;
@@ -22,8 +68,8 @@
 
 .contactMe__title-large {
   font-family: "Brown Sugar";
-  font-size: 100px;
-  letter-spacing: 15px;
+  font-size: 130px;
+  letter-spacing: 20px;
   margin: 0;
 }
 
@@ -32,7 +78,7 @@
   justify-content: space-between;
   margin-top: 330px;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-right: 50px;
   font-size: 24px;
   letter-spacing: 3px;
