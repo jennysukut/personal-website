@@ -5,6 +5,7 @@ import gradientCircle2 from "../../images/GradientCircle2.svg";
 import gradientCircle3 from "../../images/GradientCircle3.svg";
 import gradientCircle4 from "../../images/GradientCircle4.svg";
 import gradientCircle5 from "../../images/GradientCircle5.svg";
+import Nav from "../Nav/Nav";
 
 function Skills() {
   const specializedSkills = [
@@ -48,12 +49,17 @@ function Skills() {
 
   return (
     <div className="skills">
+      <Nav />
       <div className="skills__specializedSkills_container">
         <p className="specializedSkills__title-small">specialized</p>
         <h3 className="specializedSkills__title-large">SKILLS</h3>
         <ul className="specializedSkills__list">
           {specializedSkills.map((skill) => {
-            return <li className="specializedSkills__skill">{skill}</li>;
+            return (
+              <li className="specializedSkills__skill" key={skill}>
+                {skill}
+              </li>
+            );
           })}
         </ul>
       </div>
@@ -81,7 +87,11 @@ function Skills() {
         <p className="generalSkills__title-small">general skills</p>
         <ul className="generalSkills__list">
           {generalSkills.map((skill) => {
-            return <li className="generalSkills__skill">{skill}</li>;
+            return (
+              <li className="generalSkills__skill" key={skill}>
+                {skill}
+              </li>
+            );
           })}
         </ul>
       </div>
@@ -90,7 +100,11 @@ function Skills() {
         <h3 className="codingLAT__title">CODING LANGUAGES & TECHNOLOGIES</h3>
         <ul className="codingLAT__list">
           {codingLAT.map((skill) => {
-            return <li className="codingLAT__skill">{skill}</li>;
+            return (
+              <li className="codingLAT__skill" key={skill}>
+                {skill}
+              </li>
+            );
           })}
         </ul>
       </div>

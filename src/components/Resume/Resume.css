@@ -35,25 +35,26 @@
 
 .resume__skill-yrs-list {
   line-height: 16px;
-  /*margin-top: 250px;*/
   padding-right: 50px;
 }
 
 .resume__skill-yrs-work {
   font-size: 27px;
-  font-family: "FiraMono-Bold";
+  font-family: "FiraMono-Medium";
 }
 
 .resume__skill-yrs-timeline {
   font-family: "FiraMono-Regular";
   font-size: 25px;
   font-style: italic;
+  margin-bottom: 45px;
 }
 
 .resume__workExperience {
   grid-row: 2;
   padding-left: 50px;
   max-width: 550px;
+  margin-bottom: 100px;
 }
 
 .resume__workExperience_title {

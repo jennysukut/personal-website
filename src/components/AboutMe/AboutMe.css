@@ -1,0 +1,85 @@
+.aboutMe {
+  display: grid;
+  grid-template-columns: 41.5% 58.5%;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0 50px;
+  color: rgba(174, 158, 1, 1);
+}
+
+.aboutMe__empty-div {
+  border-right: solid 4px;
+  border-color: rgba(199, 175, 201, 1);
+}
+
+.aboutMe__main {
+  margin-left: 75px;
+  line-height: normal;
+}
+
+.aboutMe__main_title {
+  font-family: "Brown Sugar";
+  font-size: 100px;
+  margin: 100px 0 0;
+}
+
+.aboutMe__photo-and-details {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  padding-right: 35px;
+  margin-top: -1600px;
+  border-top: solid 4px;
+  border-right: solid 4px;
+  padding-top: 35px;
+  border-color: rgba(199, 175, 201, 1);
+  font-family: "FiraMono-Medium";
+  color: rgba(234, 31, 138, 1);
+  line-height: 12px;
+}
+
+.aboutMe__details {
+  margin-top: 35px;
+}
+
+.aboutMe__gradientCircles {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.aboutMe__gradient-circle-1 {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.aboutMe__gradient-circle-2 {
+  width: 200px;
+  height: 200px;
+  margin-bottom: -130px;
+  margin-right: -30px;
+}
+
+.aboutMe__hobbies {
+  margin-top: 160px;
+  line-height: normal;
+  font-family: "FiraMono-Regular";
+  color: rgba(208, 135, 214, 1);
+  max-width: 480px;
+  margin-bottom: 50px;
+}
+
+.aboutMe__hobbies_title {
+  font-family: "FiraMono-Medium";
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+.aboutMe__hobbies_list {
+  margin-top: 15px;
+}

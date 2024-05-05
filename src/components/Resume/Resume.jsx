@@ -1,5 +1,5 @@
 import "./Resume.css";
-import resumeWhiteLines from "../../images/ResumeWhiteLines.svg";
+import Nav from "../Nav/Nav";
 
 function Resume() {
   const skillYears = [
@@ -61,13 +61,14 @@ function Resume() {
 
   return (
     <div className="resume">
+      <Nav />
       <div className="resume__empty-div"></div>
       <p className="resume__title">RESUME</p>
       <div className="resume__skill-yrs">
         <div className="resume__skill-yrs-list">
           {skillYears.map((skill) => {
             return (
-              <div>
+              <div className="resume__skills" key={skill.work}>
                 <p className="resume__skill-yrs-work">{skill.work} :</p>
                 <p className="resume__skill-yrs-timeline">{skill.timeline}</p>
               </div>
@@ -79,7 +80,7 @@ function Resume() {
         <h3 className="resume__workExperience_title">WORK EXPERIENCE</h3>
         {workExperience.map((exp) => {
           return (
-            <div className="resume__workExperience_list">
+            <div className="resume__workExperience_list" key={exp.position}>
               <p className="workExperience__position">{exp.position}</p>
               <p className="workExperience__company">{exp.company}</p>
               <p className="workExperience__timeline">{exp.timeline}</p>
@@ -91,7 +92,7 @@ function Resume() {
         <p className="resume__education_title">EDUCATION</p>
         {education.map((ed) => {
           return (
-            <div className="education__item">
+            <div className="education__item" key={ed.program}>
               <p className="education__program">{ed.program}</p>
               <p className="education__school">{ed.school}</p>
               <p className="education__location">{ed.location}</p>

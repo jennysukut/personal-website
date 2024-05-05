@@ -1,0 +1,48 @@
+.contact {
+  background: url(../../images/GradientBackgroundFooter.svg);
+  background-size: cover;
+  width: 100vw;
+  min-width: 100%;
+  color: rgba(245, 240, 232, 1);
+}
+
+.contactMe__title {
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 45px;
+}
+
+.contactMe__title-small {
+  font-family: "FiraMono-Regular";
+  font-size: 27px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.contactMe__title-large {
+  font-family: "Brown Sugar";
+  font-size: 100px;
+  letter-spacing: 15px;
+  margin: 0;
+}
+
+.contactMe__c-c-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 330px;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.contactMe__contact-info {
+  text-align: left;
+}
+
+.copyright-info {
+  text-align: right;
+}
