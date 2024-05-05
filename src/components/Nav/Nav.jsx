@@ -8,8 +8,8 @@ function Nav() {
   //${backgroundType === "solid" ? "nav__colorful" : ""}
 
   return (
-    <div className={`nav`}>
-      <div className="nav__links">
+    <div className="nav">
+      <div id="navMenu" className="nav__links">
         <Link
           activeClass="active"
           to="skills"

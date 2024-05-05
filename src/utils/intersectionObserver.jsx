@@ -1,5 +1,6 @@
 const setIntersectionObservers = () => {
   const skillsSection = document.querySelector("#skillsComp");
+  const navMenu = document.querySelector("#navMenu");
 
   const circleSection = document.querySelector("#skills__circle-container");
   const firstCircle = document.querySelector("#skills__circle-1");
@@ -19,6 +20,33 @@ const setIntersectionObservers = () => {
   );
 
   circleObserver.observe(circleSection);
+
+  const skillsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("slideInFromLeft", entry.isIntersecting);
+        if (entry.isIntersecting) skillsObserver.unobserve(entry);
+      });
+    },
+    { threshold: 0 }
+  );
+
+  document.querySelectorAll("#skills-title").forEach((title) => {
+    skillsObserver.observe(title);
+  });
+
+  const techTitle = document.querySelector("#tech-title");
+
+  const techTitleObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("slideDown", entry.isIntersecting);
+      });
+    },
+    { threshold: 0 }
+  );
+
+  techTitleObserver.observe(techTitle);
 };
 
 export default setIntersectionObservers;

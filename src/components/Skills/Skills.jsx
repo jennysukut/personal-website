@@ -52,8 +52,12 @@ function Skills() {
     <div id="skillsComp" name="skills" className="skills">
       <Nav />
       <div className="skills__specializedSkills_container">
-        <p className="specializedSkills__title-small">specialized</p>
-        <h3 className="specializedSkills__title-large">SKILLS</h3>
+        <p id="skills-title" className="specializedSkills__title-small">
+          specialized
+        </p>
+        <h3 id="skills-title" className="specializedSkills__title-large">
+          SKILLS
+        </h3>
         <ul className="specializedSkills__list">
           {specializedSkills.map((skill) => {
             return (
@@ -87,8 +91,12 @@ function Skills() {
       </div>
 
       <div className="skills__generalSkills_container">
-        <h3 className="generalSkills__title-large">OTHER</h3>
-        <p className="generalSkills__title-small">general skills</p>
+        <h3 id="skills-title" className="generalSkills__title-large">
+          OTHER
+        </h3>
+        <p id="skills-title" className="generalSkills__title-small">
+          general skills
+        </p>
         <ul className="generalSkills__list">
           {generalSkills.map((skill) => {
             return (
@@ -101,7 +109,9 @@ function Skills() {
       </div>
 
       <div className="skills__codingLAT_container">
-        <h3 className="codingLAT__title">CODING LANGUAGES & TECHNOLOGIES</h3>
+        <h3 id="tech-title" className="codingLAT__title">
+          CODING LANGUAGES & TECHNOLOGIES
+        </h3>
         <ul className="codingLAT__list">
           {codingLAT.map((skill) => {
             return (
