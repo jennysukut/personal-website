@@ -49,9 +49,9 @@ function Skills() {
   ];
 
   return (
-    <div id="skillsComp" name="skills" className="skills">
-      <Nav />
-      <div className="skills__specializedSkills_container">
+    <div id="skillsComp" name="skills" className="skills component">
+      <Nav color="hotpink" page="skills" />
+      <div id="skills" className="skills__specializedSkills_container">
         <p id="skills-title" className="specializedSkills__title-small">
           specialized
         </p>
@@ -90,7 +90,7 @@ function Skills() {
         />
       </div>
 
-      <div className="skills__generalSkills_container">
+      <div id="skills" className="skills__generalSkills_container">
         <h3 id="skills-title" className="generalSkills__title-large">
           OTHER
         </h3>
@@ -122,16 +122,18 @@ function Skills() {
           })}
         </ul>
       </div>
-      <div className="circle-container-2">
+      <div id="skills__circle-container-2" className="circle-container-2">
         <img
+          id="skills__circle-4"
           src={gradientCircle4}
           alt="gradientCircle4"
-          className="skills__circle-4 fadeIn"
+          className="skills__circle-4"
         />
         <img
+          id="skills__circle-5"
           src={gradientCircle5}
           alt="gradientCircle5"
-          className="skills__circle-5 fadeInSlowest"
+          className="skills__circle-5"
         />
       </div>
     </div>

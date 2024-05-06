@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className="page">
-      <Nav />
       <Main />
       <Skills />
       <Resume />

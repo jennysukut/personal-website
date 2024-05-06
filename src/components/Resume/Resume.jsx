@@ -60,10 +60,12 @@ function Resume() {
   ];
 
   return (
-    <div name="resume" className="resume">
-      <Nav />
+    <div id="resume" name="resume" className="resume component">
+      <Nav color="cream" page="resume" />
       <div className="resume__empty-div"></div>
-      <p className="resume__title">RESUME</p>
+      <div className="resume__title-container">
+        <p className="resume__title">RESUME</p>
+      </div>
       <div className="resume__skill-yrs">
         <div className="resume__skill-yrs-list">
           {skillYears.map((skill) => {
@@ -88,17 +90,19 @@ function Resume() {
           );
         })}
       </div>
-      <div className="resume__education">
-        <p className="resume__education_title">EDUCATION</p>
-        {education.map((ed) => {
-          return (
-            <div className="education__item" key={ed.program}>
-              <p className="education__program">{ed.program}</p>
-              <p className="education__school">{ed.school}</p>
-              <p className="education__location">{ed.location}</p>
-            </div>
-          );
-        })}
+      <div className="resume__education-container">
+        <div className="resume__education">
+          <p className="resume__education_title">EDUCATION</p>
+          {education.map((ed) => {
+            return (
+              <div className="education__item" key={ed.program}>
+                <p className="education__program">{ed.program}</p>
+                <p className="education__school">{ed.school}</p>
+                <p className="education__location">{ed.location}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,54 @@
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-7px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
 .nav {
   position: absolute;
   color: rgba(245, 240, 232, 1);
 }
 
-.nav__colorful {
-  color: rgba(208, 135, 214, 1);
+.activeCircle {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: rgba(245, 240, 232, 0.7);
+  position: relative;
+  left: 120px;
+  top: 35px;
+}
+
+.activeCircle_main {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.activeCircle_skills {
+  background-color: rgba(234, 31, 138, 0.7);
+}
+
+.activeCircle_resume {
+  background-color: rgba(245, 240, 232, 0.7);
+  top: 71px;
+}
+
+.activeCircle_about {
+  background-color: rgba(208, 135, 214, 0.7);
+  left: 100px;
+  top: 107px;
+}
+
+.activeCircle_contact {
+  left: 133px;
+  top: 143px;
 }
 
 .nav__links {
@@ -17,10 +61,27 @@
   flex-direction: column;
 }
 
-.nav__links_skills {
+.nav__link {
   margin-top: 20px;
 }
 
-.nav__links-skills {
-  color: hotpink;
+.hotpink {
+  color: rgba(234, 31, 138, 1);
+}
+
+.cream {
+  color: rgba(245, 240, 232, 1);
+}
+
+.purple {
+  color: rgba(208, 135, 214, 1);
+}
+
+.nav__link:hover {
+  animation: wiggle ease 1s;
+  animation-iteration-count: 1;
+}
+
+.nav__link:active {
+  color: orangered;
 }

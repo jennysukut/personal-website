@@ -1,3 +1,105 @@
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bounceFromLeft {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes littleBounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+.littleBounce {
+  animation: littleBounce ease 3s;
+  animation-iteration-count: 1;
+}
+
+.bounceFromLeft {
+  animation: bounceFromLeft ease 2s;
+  animation-iteration-count: 1;
+}
+
+.fadeInFromLeft {
+  animation: fadeInFromLeft ease 2s;
+  animation-iteration-count: 1;
+}
+
+.fadeIn {
+  animation: fadeIn ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.slideDown {
+  animation: slideDown ease 2s;
+  animation-iteration-count: 1;
+}
+
+.slideUp {
+  animation: slideUp ease 2s;
+  animation-iteration-count: 1;
+}
+
 .aboutMe {
   display: grid;
   grid-template-columns: 41.5% 58.5%;
@@ -21,6 +123,7 @@
   font-family: "Brown Sugar";
   font-size: 100px;
   margin: 100px 0 0;
+  letter-spacing: 10px;
 }
 
 .aboutMe__photo-and-details {
@@ -29,7 +132,7 @@
   flex-direction: column;
   text-align: end;
   padding-right: 35px;
-  margin-top: -1600px;
+  margin-top: -1700px;
   border-top: solid 4px;
   border-right: solid 4px;
   padding-top: 35px;
@@ -43,6 +146,10 @@
   margin-top: 35px;
 }
 
+.aboutMe__info {
+  margin-top: 50px;
+  line-height: normal;
+}
 .aboutMe__gradientCircles {
   display: flex;
   flex-direction: row-reverse;

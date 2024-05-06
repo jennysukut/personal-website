@@ -37,10 +37,11 @@
 .lilBounce {
   animation: lilBounce ease 1.5s;
   animation-iteration-count: 1;
+  animation-delay: 3s;
 }
 
 .fadeIn {
-  animation: fadeIn ease 3.5s;
+  animation: fadeIn ease 4s;
   animation-iteration-count: 1;
 }
 

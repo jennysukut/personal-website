@@ -1,3 +1,66 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end);
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.fadeInFromLeft {
+  animation: fadeInFromLeft ease 5s;
+  animation-iteration-count: 1;
+}
+
+.fadeIn {
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .resume {
   background-image: url(../../images/resumeBackgroundGradient.png);
   background-size: cover;
@@ -7,16 +70,13 @@
 }
 
 .resume__empty-div {
-  border-right: solid 4px;
-  border-color: rgba(245, 240, 232, 1);
   grid-row: 1;
 }
 
 .resume__title {
   font-family: "Brown Sugar";
   font-size: 130px;
-  margin-top: 83px;
-  border-bottom: solid 4px;
+  letter-spacing: 10px;
   margin-left: 0px;
   margin-bottom: 0px;
   padding-bottom: 35px;
@@ -25,17 +85,39 @@
   grid-row: 1;
 }
 
+.resume__title-container {
+  border-left: solid 4px;
+  border-color: rgba(245, 240, 232, 1);
+}
+
+.resume__title-container:after {
+  content: "";
+  display: block;
+  width: 70%;
+  border-bottom: 4px solid rgba(245, 240, 232, 1);
+  left: 0;
+  margin-right: auto;
+}
+
 .resume__skill-yrs {
-  border-right: solid 4px;
   border-color: rgba(245, 240, 232, 1);
   text-align: end;
   margin-top: -80px;
   grid-row: 2;
 }
 
+.resume__skill-yrs:after {
+  content: "";
+  display: block;
+  width: 90%;
+  border-bottom: 4px solid rgba(245, 240, 232, 1);
+  margin-left: auto;
+}
+
 .resume__skill-yrs-list {
   line-height: 16px;
   padding-right: 50px;
+  margin-bottom: 170px;
 }
 
 .resume__skill-yrs-work {
@@ -48,13 +130,15 @@
   font-size: 25px;
   font-style: italic;
   margin-bottom: 45px;
+  padding-top: 5px;
 }
 
 .resume__workExperience {
   grid-row: 2;
   padding-left: 50px;
   max-width: 550px;
-  margin-bottom: 100px;
+  border-left: solid 4px;
+  padding-bottom: 100px;
 }
 
 .resume__workExperience_title {
@@ -97,7 +181,6 @@
   padding-right: 50px;
   padding-top: 35px;
   margin-top: -700px;
-  border-top: solid 4px;
   font-size: 27px;
   letter-spacing: 5px;
   padding-left: 50px;

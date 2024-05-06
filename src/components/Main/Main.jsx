@@ -1,10 +1,13 @@
 import "./Main.css";
 import { StaggerTextReveal } from "stagger-text-reveal-animation";
 import whiteLines from "../../images/MainWhiteLines.svg";
+import Nav from "../Nav/Nav";
+import { useEffect, useState } from "react";
 
 function Main() {
   return (
-    <div className="main">
+    <div className="main component">
+      <Nav color="cream" page="main" />
       <div className="main__title">
         <h3 className="main__title-name fadeInFromRight">Jennifer Sukut</h3>
         <div className="main__title-details">

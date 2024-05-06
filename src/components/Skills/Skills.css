@@ -38,6 +38,15 @@
   }
 }
 
+@keyframes slideInFromTopLeft {
+  0% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 @keyframes slideUp {
   0% {
     transform: translateY(250px);
@@ -84,6 +93,11 @@
 
 .slideInFromLeft {
   animation: slideInFromLeft ease 2s;
+  animation-iteration-count: 1;
+}
+
+.slideInFromTopLeft {
+  animation: slideInFromTopLeft ease 2s;
   animation-iteration-count: 1;
 }
 
@@ -193,7 +207,7 @@
 .specializedSkills__title-large {
   font-family: "Brown Sugar";
   font-size: 115px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   font-weight: 400;
   margin: 0;
   margin-right: 50px;
@@ -216,7 +230,7 @@
 .generalSkills__title-large {
   font-family: "Brown Sugar";
   font-size: 115px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   font-weight: 400;
   margin: 0;
 }

@@ -4,6 +4,8 @@ import { StaggerTextReveal } from "stagger-text-reveal-animation";
 import profileImage from "../../images/ProfileImage2.svg";
 import gradientCircle6 from "../../images/GradientCircle6.svg";
 import gradientCircle7 from "../../images/GradientCircle7.svg";
+import gradientCircle8 from "../../images/GradientCircle8.svg";
+
 import Nav from "../Nav/Nav";
 
 function AboutMe() {
@@ -30,15 +32,15 @@ function AboutMe() {
       "Reading, Baking, Jamming to Fantastic Tunes, Polymer Clay Jewelry Creating, Long Walks, Beach Time with Family, Daydreaming, Crafting a Daily Colorful Outfit, Sharing Stories, Enjoying the Moments that Make Me Human.",
   };
   return (
-    <div name="about" className="aboutMe">
-      <Nav />
+    <div id="aboutMe" name="about" className="aboutMe component">
+      <Nav color="purple" page="about" />
       <div className="aboutMe__empty-div"></div>
       <div className="aboutMe__main">
         <p className="aboutMe__main_title">ABOUT ME</p>
-        <div className="aboutMe__main_info">
+        <div className="aboutMe__main_info ami">
           {aboutMeInfo.info.map((info) => {
             return (
-              <p className="aboutMe__info" key={info}>
+              <p className="aboutMe__info ami" key={info}>
                 {info}
               </p>
             );
@@ -49,12 +51,12 @@ function AboutMe() {
         <img
           src={profileImage}
           alt="Jennifer Sukut"
-          className="aboutMe__photo"
+          className="aboutMe__photo ami"
         />
         <div className="aboutMe__details">
           {aboutMeInfo.details.map((info) => {
             return (
-              <p className="aboutMeDetail" key={info}>
+              <p className="aboutMeDetail amPoints" key={info}>
                 {info}
               </p>
             );
@@ -72,6 +74,7 @@ function AboutMe() {
             className="aboutMe__gradient-circle-2"
           />
         </div>
+
         <div className="aboutMe__hobbies">
           <p className="aboutMe__hobbies_title">FOR FUN:</p>
           <p className="aboutMe__hobbies_list">{aboutMeInfo.hobbies}</p>
