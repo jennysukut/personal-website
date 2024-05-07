@@ -72,7 +72,7 @@
 .littleBounce {
   animation: littleBounce ease 3s;
   animation-iteration-count: 1;
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
 }
 
 .bounceFromLeft {
@@ -108,6 +108,7 @@
   letter-spacing: 3px;
   margin: 0 50px;
   color: rgba(174, 158, 1, 1);
+  background-color: rgba(245, 240, 232, 1);
 }
 
 .aboutMe__empty-div {
@@ -190,4 +191,29 @@
 
 .aboutMe__hobbies_list {
   margin-top: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  .aboutMe__main_title {
+    font-size: 80px;
+  }
+  .aboutMe__photo-and-details {
+    margin-top: -1800px;
+  }
+
+  .aboutMe__details {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .aboutMe__hobbies_list {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutMe__photo-and-details {
+    margin-top: -1900px;
+  }
 }

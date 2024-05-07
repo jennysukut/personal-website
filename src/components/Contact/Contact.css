@@ -48,8 +48,8 @@
 .contact {
   background: url(../../images/GradientBackgroundFooter.svg);
   background-size: cover;
-  width: 100vw;
-  min-width: 100%;
+  /*width: 100vw;
+  min-width: 100%;*/
   color: rgba(245, 240, 232, 1);
 }
 
@@ -96,4 +96,24 @@
 
 .contact_info a {
   color: rgba(245, 240, 232, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  .contactMe__title-large {
+    font-size: 100px;
+    letter-spacing: 10px;
+  }
+
+  .contactMe__c-c-info {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+
+  .contactMe__contact-info {
+    margin-bottom: -15px;
+  }
+
+  .copyright-info {
+    font-size: 20px;
+  }
 }

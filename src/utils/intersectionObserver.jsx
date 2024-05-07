@@ -87,20 +87,11 @@ const setIntersectionObservers = () => {
   ///RESUME SECTION OBSERVER
   const resumeSection = document.querySelector("#resume");
   const resumeTitle = document.querySelector(".resume__title");
-  const resumeSkillsYrs = document.querySelectorAll(
-    ".resume__skill-yrs-timeline"
-  );
+
   const resumeObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         resumeTitle.classList.toggle("fadeIn", entry.isIntersecting);
-        resumeSkillsYrs.forEach((item) => {
-          item.classList.toggle("typewriter", entry.isIntersecting);
-        });
-        // resumeEducation.classList.toggle(
-        // "fadeInFromLeft",
-        // entry.isIntersecting
-        // );
         if (entry.isIntersecting) resumeObserver.unobserve(resumeSection);
       });
     },
@@ -109,7 +100,26 @@ const setIntersectionObservers = () => {
 
   resumeObserver.observe(resumeSection);
 
-  ///REDUME EDUCATION OBSERVER
+  ///RESUME SKILLS OBSERVER
+  const resumeSkillsYrs = document.querySelectorAll(
+    ".resume__skill-yrs-timeline"
+  );
+
+  const resumeSkillsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("typewriter", entry.isIntersecting);
+        if (entry.isIntersecting) resumeSkillsObserver.unobserve(entry.target);
+      });
+    },
+    { threshold: 0 }
+  );
+
+  resumeSkillsYrs.forEach((yr) => {
+    resumeSkillsObserver.observe(yr);
+  });
+
+  ///RESUME EDUCATION OBSERVER
   const resumeEducation = document.querySelector(".resume__education");
 
   const resumeEdObserver = new IntersectionObserver(

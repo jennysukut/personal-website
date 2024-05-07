@@ -44,8 +44,8 @@
 .main {
   background-image: url("../../images/GradientBackgroundMain.svg");
   background-size: cover;
-  width: 100vw;
-  min-width: 100%;
+  /*width: 100vw;
+  min-width: 100%;*/
   color: rgba(245, 240, 232, 1);
 }
 

@@ -1,10 +1,7 @@
 import "./AboutMe.css";
-import { useState, useEffect } from "react";
-import { StaggerTextReveal } from "stagger-text-reveal-animation";
 import profileImage from "../../images/ProfileImage2.svg";
 import gradientCircle6 from "../../images/GradientCircle6.svg";
 import gradientCircle7 from "../../images/GradientCircle7.svg";
-import gradientCircle8 from "../../images/GradientCircle8.svg";
 
 import Nav from "../Nav/Nav";
 

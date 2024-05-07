@@ -215,3 +215,22 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 1200px) {
+  .resume__education {
+    font-size: 24px;
+    margin-top: -750px;
+  }
+
+  .resume__workExperience_title {
+    font-size: 3.3vw;
+  }
+
+  .resume__education_title {
+    font-size: 3.3vw;
+  }
+
+  .resume__skill-yrs-list {
+    margin-bottom: 80px;
+  }
+}
