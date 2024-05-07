@@ -127,3 +127,26 @@
     margin-bottom: 40px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .contactMe__title-large {
+    font-size: 200px;
+  }
+
+  .contactMe__title-small {
+    font-size: 50px;
+  }
+
+  .contactMe__c-c-info {
+    font-size: 50px;
+  }
+
+  .contact_info {
+    margin-left: 50px;
+  }
+
+  .copyright-info {
+    font-size: 40px;
+    margin-bottom: 100px;
+  }
+}

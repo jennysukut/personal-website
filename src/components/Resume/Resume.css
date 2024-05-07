@@ -286,3 +286,63 @@
     margin-top: -950px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .resume__title {
+    font-size: 170px;
+  }
+
+  .resume__skill-yrs-work {
+    font-size: 50px;
+  }
+
+  .resume__skill-yrs-timeline {
+    font-size: 35px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .resume__education {
+    margin-top: -1800px;
+    line-height: normal;
+    text-overflow: wrap;
+  }
+
+  .resume__workExperience_title {
+    font-size: 70px;
+  }
+
+  .resume__workExperience_list {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .workExperience__position {
+    font-size: 55px;
+    line-height: normal;
+  }
+
+  .resume__education_title {
+    font-size: 100px;
+    rotate: 270deg;
+    margin-top: 275px;
+    margin-bottom: 295px;
+  }
+
+  .education__program {
+    font-size: 55px;
+  }
+
+  .education__school {
+    font-size: 40px;
+  }
+
+  .education__location {
+    font-size: 35px;
+  }
+
+  .education__item {
+    margin-top: 100px;
+  }
+}

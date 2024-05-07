@@ -140,6 +140,7 @@ function Skills() {
           className="skills__circle-5"
         />
       </div>
+      <div className="skills__blank-div"></div>
     </div>
   );
 }

@@ -239,3 +239,61 @@
     padding-right: 20px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .aboutMe {
+    font-size: 40px;
+    grid-template-columns: 100%;
+  }
+
+  .aboutMe__main {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-right: 0px;
+  }
+
+  .aboutMe__main_title {
+    font-size: 200px;
+    text-align: end;
+  }
+
+  .aboutMe__photo {
+    width: 900px;
+  }
+
+  .aboutMe__details {
+    font-size: 80px;
+  }
+
+  .aboutMe__empty-div {
+    display: none;
+  }
+
+  .aboutMe__photo-and-details {
+    border: none;
+    margin-top: -50px;
+  }
+
+  .aboutMe__gradient-circle-1 {
+    width: 900px;
+    height: 900px;
+  }
+
+  .aboutMe__gradient-circle-2 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .aboutMe__hobbies {
+    max-width: 980px;
+  }
+
+  .aboutMe__hobbies_list {
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  .aboutMe__hobbies_title {
+    font-size: 70px;
+  }
+}

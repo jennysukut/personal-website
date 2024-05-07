@@ -281,6 +281,11 @@
   margin-left: 50px;
 }
 
+.skills__blank-div {
+  border-left: solid 4px;
+  border-color: rgba(199, 175, 201, 1);
+}
+
 @media screen and (max-width: 1200px) {
   .specializedSkills__title-large {
     font-size: 9.5vw;
@@ -399,7 +404,7 @@
   }
 
   .generalSkills__title-large {
-    font-size: 170px;
+    font-size: 200px;
   }
 
   .specializedSkills__title-small {
@@ -407,7 +412,7 @@
   }
 
   .specializedSkills__title-large {
-    font-size: 170px;
+    font-size: 200px;
   }
 
   .specializedSkills__skill {
@@ -418,6 +423,14 @@
   .generalSkills__skill {
     font-size: 40px;
     margin-top: 25px;
+  }
+
+  .specializedSkills__list {
+    padding-left: 50px;
+  }
+
+  .generalSkills__list {
+    padding-left: 50px;
   }
 
   .codingLAT__title {
@@ -436,7 +449,10 @@
   .skills__title-container {
     rotate: 270deg;
     margin-top: 275px;
-    margin-bottom: 200px;
+    margin-bottom: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .skills__circle-container {
@@ -444,17 +460,31 @@
   }
 
   .skills__circle-1 {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
   }
 
   .skills__circle-2 {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
   }
 
   .skills__circle-3 {
     width: 300px;
     height: 300px;
+  }
+
+  .skills__circle-4 {
+    width: 300px;
+    height: 300px;
+    margin-top: -190px;
+    margin-left: -130px;
+  }
+
+  .skills__circle-5 {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-left: 50px;
   }
 }
