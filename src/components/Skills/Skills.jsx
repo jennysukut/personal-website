@@ -52,12 +52,14 @@ function Skills() {
     <div id="skillsComp" name="skills" className="skills component">
       <Nav color="hotpink" page="skills" />
       <div id="skills" className="skills__specializedSkills_container">
-        <p id="skills-title" className="specializedSkills__title-small">
-          specialized
-        </p>
-        <h3 id="skills-title" className="specializedSkills__title-large">
-          SKILLS
-        </h3>
+        <div className="skills__title-container">
+          <p id="skills-title" className="specializedSkills__title-small">
+            specialized
+          </p>
+          <h3 id="skills-title" className="specializedSkills__title-large">
+            SKILLS
+          </h3>
+        </div>
         <ul className="specializedSkills__list">
           {specializedSkills.map((skill) => {
             return (
@@ -91,12 +93,14 @@ function Skills() {
       </div>
 
       <div id="skills" className="skills__generalSkills_container">
-        <h3 id="skills-title" className="generalSkills__title-large">
-          OTHER
-        </h3>
-        <p id="skills-title" className="generalSkills__title-small">
-          general skills
-        </p>
+        <div className="skills__title-container">
+          <h3 id="skills-title" className="generalSkills__title-large">
+            OTHER
+          </h3>
+          <p id="skills-title" className="generalSkills__title-small">
+            general skills
+          </p>
+        </div>
         <ul className="generalSkills__list">
           {generalSkills.map((skill) => {
             return (

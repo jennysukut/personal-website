@@ -392,3 +392,69 @@
     padding-right: 10px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .generalSkills__title-small {
+    font-size: 45px;
+  }
+
+  .generalSkills__title-large {
+    font-size: 170px;
+  }
+
+  .specializedSkills__title-small {
+    font-size: 45px;
+  }
+
+  .specializedSkills__title-large {
+    font-size: 170px;
+  }
+
+  .specializedSkills__skill {
+    font-size: 40px;
+    margin-top: 25px;
+  }
+
+  .generalSkills__skill {
+    font-size: 40px;
+    margin-top: 25px;
+  }
+
+  .codingLAT__title {
+    font-size: 70px;
+  }
+
+  .codingLAT__skill {
+    font-size: 50px;
+    line-height: 95px;
+  }
+
+  .skills__generalSkills_container {
+    margin-top: 40px;
+  }
+
+  .skills__title-container {
+    rotate: 270deg;
+    margin-top: 275px;
+    margin-bottom: 200px;
+  }
+
+  .skills__circle-container {
+    justify-content: space-evenly;
+  }
+
+  .skills__circle-1 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .skills__circle-2 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .skills__circle-3 {
+    width: 300px;
+    height: 300px;
+  }
+}
