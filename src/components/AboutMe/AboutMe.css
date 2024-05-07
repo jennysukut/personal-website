@@ -216,4 +216,26 @@
   .aboutMe__photo-and-details {
     margin-top: -1900px;
   }
+
+  .aboutMe__details {
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutMe__photo-and-details {
+    margin-top: -2295px;
+  }
+
+  .aboutMe {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .aboutMe__main {
+    margin-left: 35px;
+    padding-right: 20px;
+  }
 }

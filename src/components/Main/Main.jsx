@@ -11,11 +11,7 @@ function Main() {
       <div className="main__title">
         <h3 className="main__title-name fadeInFromRight">Jennifer Sukut</h3>
         <div className="main__title-details">
-          <StaggerTextReveal
-            text={"web developer"}
-            className="main__title-details"
-            fontSize={25}
-          />
+          <p className="main__title-details fadeIn">web developer</p>
         </div>
       </div>
       <div className="main__details-container">

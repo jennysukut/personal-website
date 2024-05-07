@@ -150,6 +150,7 @@
 .workExperience__company {
   margin: 0;
   margin-bottom: 15px;
+  line-height: normal;
 }
 
 .workExperience__timeline {
@@ -232,5 +233,56 @@
 
   .resume__skill-yrs-list {
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .resume {
+    padding-right: 20px;
+    padding-left: 15px;
+  }
+
+  .resume__title {
+    font-size: 100px;
+  }
+
+  .resume__skill-yrs {
+    margin-top: 0;
+  }
+
+  .resume__skill-yrs-work {
+    line-height: normal;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+
+  .resume__skill-yrs-timeline {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .resume__education {
+    margin-top: -785px;
+  }
+
+  .resume__workExperience {
+    padding-right: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resume__education_title {
+    font-size: 35px;
+    padding-right: 10px;
+  }
+
+  .resume__workExperience_title {
+    font-size: 35px;
+    padding-right: 10px;
+  }
+
+  .resume__education {
+    margin-top: -950px;
   }
 }

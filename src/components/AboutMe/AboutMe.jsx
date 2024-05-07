@@ -20,10 +20,10 @@ function AboutMe() {
       "enthusiastic coder //",
       "world traveler //",
       "lover of color //",
-      "bit of an entrepreneur //",
       "bookish lady //",
       "creative & artisan //",
-      "sustainability focused //",
+      "entrepreneur //",
+      "ethically focused //",
     ],
     hobbies:
       "Reading, Baking, Jamming to Fantastic Tunes, Polymer Clay Jewelry Creating, Long Walks, Beach Time with Family, Daydreaming, Crafting a Daily Colorful Outfit, Sharing Stories, Enjoying the Moments that Make Me Human.",

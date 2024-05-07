@@ -117,3 +117,13 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 1075px) {
+  .contactMe__contact-info {
+    margin-bottom: 50px;
+  }
+
+  .copyright-info {
+    margin-bottom: 40px;
+  }
+}
