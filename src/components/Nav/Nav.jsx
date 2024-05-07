@@ -6,7 +6,7 @@ function Nav(props) {
   return (
     <div className="nav">
       <div id="navMenu" className={`nav__links ${props.color}`}>
-        <div className={`activeCircle activeCircle_${props.page}`}></div>
+        <div className={`activeCircle activeCircle_${props.page} blink`}></div>
         <Link
           activeClass="active"
           to="skills"
@@ -55,11 +55,6 @@ function Nav(props) {
         >
           contact
         </Link>
-
-        {/* <p className="nav__links_skills">skills</p>
-        <p className="nav__links_about">about</p>
-        <p className="nav__links_contact">contact</p>
-        <p className="nav__links_resume">resume</p> */}
       </div>
     </div>
   );

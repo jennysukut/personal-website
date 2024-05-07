@@ -72,6 +72,7 @@
 .littleBounce {
   animation: littleBounce ease 3s;
   animation-iteration-count: 1;
+  animation-delay: 1.5s;
 }
 
 .bounceFromLeft {

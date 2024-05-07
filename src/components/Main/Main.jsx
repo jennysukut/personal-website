@@ -20,7 +20,7 @@ function Main() {
       </div>
       <div className="main__details-container">
         <div className="main__details-empty-div"></div>
-        <p className="main__details-text fadeInFromLeft">
+        <p className="main__details-text">
           Bringing passion, creativity, quality designs, and functionality to
           web-based applications.
         </p>

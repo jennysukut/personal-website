@@ -1,4 +1,16 @@
-const setIntersectionObservers = (handleActiveSection) => {
+const setIntersectionObservers = () => {
+  ///MAIN DETAILS OBSERVER
+  const mainDetails = document.querySelector(".main__details-text");
+
+  const mainDetailsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      mainDetails.classList.toggle("fadeInFromLeft", entry.isIntersecting);
+      if (entry.isIntersecting) mainDetailsObserver.unobserve(mainDetails);
+    });
+  });
+
+  mainDetailsObserver.observe(mainDetails);
+
   ///SKILLS CIRCLES OBSERVER 1
   const circleSection = document.querySelector("#skills__circle-container");
   const firstCircle = document.querySelector("#skills__circle-1");
@@ -11,7 +23,7 @@ const setIntersectionObservers = (handleActiveSection) => {
         firstCircle.classList.toggle("rotate", entry.isIntersecting);
         secondCircle.classList.toggle("bounceFromLeft", entry.isIntersecting);
         thirdCircle.classList.toggle("slideUp", entry.isIntersecting);
-        if (entry.isIntersecting) circleObserver.unobserve(entry.target);
+        // if (entry.isIntersecting) circleObserver.unobserve(entry.target);
       });
     },
     { threshold: 0.25 }
@@ -32,7 +44,7 @@ const setIntersectionObservers = (handleActiveSection) => {
           "slideInFromTopLeft",
           entry.isIntersecting
         );
-        if (entry.isIntersecting) circleObserver2.unobserve(entry.target);
+        // if (entry.isIntersecting) circleObserver2.unobserve(entry.target);
       });
     },
     { threshold: 0.1 }
@@ -78,8 +90,6 @@ const setIntersectionObservers = (handleActiveSection) => {
   const resumeSkillsYrs = document.querySelectorAll(
     ".resume__skill-yrs-timeline"
   );
-  const resumeEducation = document.querySelector(".resume__education");
-
   const resumeObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -87,10 +97,10 @@ const setIntersectionObservers = (handleActiveSection) => {
         resumeSkillsYrs.forEach((item) => {
           item.classList.toggle("typewriter", entry.isIntersecting);
         });
-        resumeEducation.classList.toggle(
-          "fadeInFromLeft",
-          entry.isIntersecting
-        );
+        // resumeEducation.classList.toggle(
+        // "fadeInFromLeft",
+        // entry.isIntersecting
+        // );
         if (entry.isIntersecting) resumeObserver.unobserve(resumeSection);
       });
     },
@@ -98,6 +108,22 @@ const setIntersectionObservers = (handleActiveSection) => {
   );
 
   resumeObserver.observe(resumeSection);
+
+  ///REDUME EDUCATION OBSERVER
+  const resumeEducation = document.querySelector(".resume__education");
+
+  const resumeEdObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        console.log("looking at education");
+        entry.target.classList.toggle("fadeInFromLeft", entry.isIntersecting);
+        if (entry.isIntersecting) resumeEdObserver.unobserve(resumeEducation);
+      });
+    },
+    { threshold: 0 }
+  );
+
+  resumeEdObserver.observe(resumeEducation);
 
   ///WORK EXPERIENCE OBSERVER
   const workExperience = document.querySelectorAll(
@@ -156,7 +182,7 @@ const setIntersectionObservers = (handleActiveSection) => {
     (entries) => {
       entries.forEach((entry) => {
         entry.target.classList.toggle("fadeInFromLeft", entry.isIntersecting);
-        if (entry.isIntersecting) aboutMePointsObserver.unobserve(entry.target);
+        //if (entry.isIntersecting) aboutMePointsObserver.unobserve(entry.target);
       });
     },
     { threshold: 0.2 }
@@ -167,7 +193,9 @@ const setIntersectionObservers = (handleActiveSection) => {
   });
 
   ///ABOUT ME CIRCLES OBSERVER
+  // const aboutMeCircles = document.querySelector(".aboutMe__gradientCircles");
   const aboutMeCircles = document.querySelector(".aboutMe__gradientCircles");
+
   const aboutMeCircle1 = document.querySelector(".aboutMe__gradient-circle-1");
   const aboutMeCircle2 = document.querySelector(".aboutMe__gradient-circle-2");
   const forFunSection = document.querySelector(".aboutMe__hobbies");
@@ -178,8 +206,8 @@ const setIntersectionObservers = (handleActiveSection) => {
         aboutMeCircle1.classList.toggle("bounceFromLeft", entry.isIntersecting);
         aboutMeCircle2.classList.toggle("slideUp", entry.isIntersecting);
         forFunSection.classList.toggle("littleBounce", entry.isIntersecting);
-        if (entry.isIntersecting)
-          aboutMeCirclesObserver.unobserve(entry.target);
+        // if (entry.isIntersecting)
+        // aboutMeCirclesObserver.unobserve(entry.target);
       });
     },
     { threshold: 0 }

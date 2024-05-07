@@ -16,8 +16,16 @@ function Contact() {
 
       <div className="contactMe__c-c-info">
         <div className="contactMe__contact-info">
-          <p className="contact_info">email: jennysukut@gmail.com</p>
-          <p className="contact_info">github: https://github.com/jennysukut</p>
+          <p className="contact_info">
+            email:
+            <a href="mailto:jennysukut@gmail.com">jennysukut@gmail.com</a>
+          </p>
+          <p className="contact_info">
+            github:
+            <a href="https://github.com/jennysukut" target="_blank">
+              https://github.com/jennysukut
+            </a>
+          </p>
         </div>
         <p className="copyright-info">ⓒ 2024 Jennifer Sukut</p>
       </div>

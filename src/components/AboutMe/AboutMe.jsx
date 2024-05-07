@@ -62,7 +62,7 @@ function AboutMe() {
             );
           })}
         </div>
-        <div className="aboutMe__gradientCircles">
+        <div className="aboutMe__gradientCircles amc">
           <img
             src={gradientCircle6}
             alt="gradientCircle6"
@@ -75,7 +75,7 @@ function AboutMe() {
           />
         </div>
 
-        <div className="aboutMe__hobbies">
+        <div className="aboutMe__hobbies amc">
           <p className="aboutMe__hobbies_title">FOR FUN:</p>
           <p className="aboutMe__hobbies_list">{aboutMeInfo.hobbies}</p>
         </div>

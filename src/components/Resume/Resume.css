@@ -34,14 +34,6 @@
   }
 }
 
-.typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: auto;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(30, end);
-}
-
 @keyframes fadeInFromRight {
   0% {
     transform: translateX(100px);
@@ -49,16 +41,6 @@
   100% {
     transform: translateX(0px);
   }
-}
-.fadeInFromLeft {
-  animation: fadeInFromLeft ease 5s;
-  animation-iteration-count: 1;
-}
-
-.fadeIn {
-  animation: fadeIn ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 .resume {
@@ -211,4 +193,25 @@
 
 .education__location {
   margin: 0;
+}
+
+/*ANIMATIONS*/
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end);
+}
+
+.fadeInFromLeft {
+  animation: fadeInFromLeft ease 6s;
+  animation-iteration-count: 1;
+}
+
+.fadeIn {
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }

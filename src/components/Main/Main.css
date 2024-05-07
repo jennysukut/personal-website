@@ -18,7 +18,7 @@
 
 @keyframes fadeInFromLeft {
   0% {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0px);
@@ -89,6 +89,7 @@
 .main__details-text {
   font-family: "FiraMono-Regular";
   font-size: 23px;
+  line-height: 30px;
   letter-spacing: 5px;
   max-width: 570px;
   border-top: solid 4px;

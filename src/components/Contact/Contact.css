@@ -94,7 +94,6 @@
   text-align: right;
 }
 
-.allgreen {
-  animation: lilBounce ease 3.5s;
-  animation-iteration-count: 1;
+.contact_info a {
+  color: rgba(245, 240, 232, 1);
 }

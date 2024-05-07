@@ -11,6 +11,21 @@
   }
 }
 
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink ease 2.5s;
+  animation-iteration-count: infinite;
+}
+
 .nav {
   position: absolute;
   color: rgba(245, 240, 232, 1);
