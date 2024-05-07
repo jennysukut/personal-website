@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-import { Routes, Route } from "react-router-dom";
 import setIntersectionObservers from "../../utils/intersectionObserver";
 
 import "./App.css";
