@@ -9,7 +9,7 @@ function Main() {
     <div className="main component">
       <Nav color="cream" page="main" />
       <div className="main__title">
-        <h3 className="main__title-name fadeInFromRight">Jennifer Sukut</h3>
+        <h3 className="main__title-name fadeInFromRight">JENNIFER SUKUT</h3>
         <div className="main__title-details">
           <p className="main__title-details fadeIn">web developer</p>
         </div>
