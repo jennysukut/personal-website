@@ -655,11 +655,11 @@
   }
 
   .specializedSkills__skill {
-    font-size: 4.1vw;
+    font-size: 5vw;
   }
 
   .generalSkills__skill {
-    font-size: 4.1vw;
+    font-size: 5vw;
   }
 
   .skills__circle-container:after {
@@ -705,14 +705,14 @@
   }
 
   .codingLAT__title {
-    font-size: 9.3vw;
+    font-size: 9vw;
     margin-top: 30px;
     margin-left: 30px;
   }
 
   .codingLAT__skill {
-    font-size: 34px;
-    line-height: 60px;
+    font-size: 7vw;
+    line-height: 12.5vw;
     text-align: right;
     margin-right: 45px;
   }

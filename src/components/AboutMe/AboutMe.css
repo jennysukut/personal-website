@@ -307,7 +307,7 @@
   }
 
   .aboutMe__details {
-    font-size: 25px;
+    font-size: 4.2vw;
   }
 
   .aboutMe__empty-div {
@@ -366,5 +366,13 @@
 
   .aboutMe__gradient-circle-2 {
     margin-left: 25px;
+  }
+
+  .aboutMe__hobbies_list {
+    font-size: 18px;
+  }
+
+  .aboutMe__hobbies_title {
+    font-size: 25px;
   }
 }

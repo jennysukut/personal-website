@@ -261,16 +261,16 @@
   }
 
   .main__title-details {
-    font-size: 24px;
+    font-size: 5vw;
   }
 
   .main__title-name {
-    font-size: 80px;
+    font-size: 16.6vw;
   }
 
   .main__details-text {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 4.1vw;
+    line-height: 6.25vw;
     padding-top: 15px;
     padding-left: 15px;
     border-top: solid 2px;

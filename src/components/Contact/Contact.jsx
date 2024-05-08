@@ -27,6 +27,16 @@ function Contact() {
             </a>
           </p>
         </div>
+        <div className="contactMe__contact-info-mobile">
+          <p className="contact_info">
+            <a href="mailto:jennysukut@gmail.com">DROP ME AN EMAIL</a>
+          </p>
+          <p className="contact_info">
+            <a href="https://github.com/jennysukut" target="_blank">
+              VISIT MY GITHUB
+            </a>
+          </p>
+        </div>
         <p className="copyright-info">ⓒ 2024 Jennifer Sukut</p>
       </div>
     </div>
