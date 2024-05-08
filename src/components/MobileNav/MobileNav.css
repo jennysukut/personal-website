@@ -1,0 +1,36 @@
+.mobileNavigation {
+  position: fixed;
+  color: rgba(245, 240, 232, 1);
+  display: none;
+  margin: 50px 0 0 50px;
+}
+
+.mobileMenu__button {
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+
+.mobileNav {
+  background-color: blueviolet;
+  width: 80vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.mobileNav-opened {
+  /*set visibility*/
+}
+
+.mobileNav__link {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .mobileNavigation {
+    display: block;
+  }
+}

@@ -1,13 +1,31 @@
 import { useState, useEffect, useRef } from "react";
-import "./Nav.css";
+import "./MobileNav.css";
 import { Link } from "react-scroll";
 import mobileMenuButton from "../../images/MobileMenu.svg";
 
-function Nav(props) {
+function MobileNav(closeActiveModal, activeModal, handleMobileMenuClick) {
+  //get state here to determine which place the nav is at to set the active circle?
+
+  //make a mobile menu here that's only visible once the screen is under 500px
+  //set another link to go up to the main
+  //fix the link to skills to go to the top
+  //make the button invisible when the modal is opened?
+
   return (
-    <div className="nav">
-      <div id="navMenu" className={`nav__links ${props.color}`}>
-        <div className={`activeCircle activeCircle_${props.page} blink`}></div>
+    <div className="mobileNavigation">
+      <div id="mobileNavMenu" className="mobileMenu">
+        <img
+          src={mobileMenuButton}
+          alt="mobileMenuButton"
+          className="mobileMenu__button"
+          onClick={handleMobileMenuClick}
+        />
+      </div>
+      <div
+        className={`mobileNav ${
+          activeModal === "mobile-menu" ? "mobileNav-opened " : ""
+        }`}
+      >
         <Link
           activeClass="active"
           to="skills"
@@ -15,7 +33,7 @@ function Nav(props) {
           smooth={true}
           offset={50}
           duration={500}
-          className="nav__link nav__links_skills "
+          className="mobileNav__link nav__links_skills "
           //onSetActive={handleSetActive}
         >
           skills
@@ -27,7 +45,7 @@ function Nav(props) {
           smooth={true}
           offset={50}
           duration={500}
-          className="nav__link nav__links_resume"
+          className="mobileNav__link nav__links_resume"
           //onSetActive={handleSetActive}
         >
           resume
@@ -39,7 +57,7 @@ function Nav(props) {
           smooth={true}
           offset={50}
           duration={500}
-          className="nav__link nav__links_about "
+          className="mobileNav__link nav__links_about "
           //onSetActive={handleSetActive}
         >
           about
@@ -51,7 +69,7 @@ function Nav(props) {
           smooth={true}
           offset={50}
           duration={500}
-          className="nav__link nav__links_contact"
+          className="mobileNav__link nav__links_contact"
           //onSetActive={handleSetActive}
         >
           contact
@@ -61,4 +79,4 @@ function Nav(props) {
   );
 }
 
-export default Nav;
+export default MobileNav;

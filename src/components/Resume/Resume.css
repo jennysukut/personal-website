@@ -44,6 +44,8 @@
 }
 
 .resume {
+  width: 100vw;
+  min-width: 100%;
   background-image: url(../../images/resumeBackgroundGradient.png);
   background-size: cover;
   color: rgba(245, 240, 232, 1);

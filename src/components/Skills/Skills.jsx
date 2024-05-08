@@ -93,7 +93,7 @@ function Skills() {
       </div>
 
       <div id="skills" className="skills__generalSkills_container">
-        <div className="skills__title-container">
+        <div className="skills__title-container generalSkills__title-container">
           <h3 id="skills-title" className="generalSkills__title-large">
             OTHER
           </h3>

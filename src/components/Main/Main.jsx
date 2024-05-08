@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 function Main() {
   return (
-    <div className="main component">
+    <div name="main" className="main component">
       <Nav color="cream" page="main" />
       <div className="main__title">
         <h3 className="main__title-name fadeInFromRight">JENNIFER SUKUT</h3>
