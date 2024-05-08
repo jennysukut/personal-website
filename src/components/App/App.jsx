@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div className="underConstructionMessage">
+      {/* <div className="underConstructionMessage">
         <p className="underConstructionMessage__text">
           Sorry, the mobile version of this site is under construction & will be
           available shortly!
@@ -35,7 +35,7 @@ function App() {
         <p className="underConstructionMessage__text">
           Return to a larger screen size to interact with the main app.
         </p>
-      </div>
+      </div> */}
       <div className="page">
         <MobileNav
           closeActiveModal={closeActiveModal}

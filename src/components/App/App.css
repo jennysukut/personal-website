@@ -36,17 +36,17 @@
   overflow: hidden;
 }
 
-.underConstructionMessage {
+/* .underConstructionMessage {
   display: none;
-}
-
+} */
+/* 
 @media screen and (max-width: 900px) {
   .page {
     /*display: none;*/
-  }
+/* }
   .underConstructionMessage {
     /* display: block;*/
-    background-image: url("../../images/GradientBackgroundMain.svg");
+/* background-image: url("../../images/GradientBackgroundMain.svg");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -64,4 +64,4 @@
   .underConstructionMessage__text {
     max-width: 300px;
   }
-}
+} */
