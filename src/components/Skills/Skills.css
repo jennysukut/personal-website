@@ -592,7 +592,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .specializedSkills__list {
     margin-right: 20px;
   }
@@ -611,5 +611,121 @@
 
   .skills__circle-5 {
     margin-top: -7px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills {
+    display: block;
+  }
+
+  .skills__specializedSkills_container:before {
+    border-bottom: 0;
+  }
+
+  .skills__title-container {
+    rotate: 0deg;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .specializedSkills__title-large {
+    font-size: 24vw;
+  }
+
+  .generalSkills__title-large {
+    font-size: 24vw;
+  }
+
+  .specializedSkills__title-small {
+    font-size: 5vw;
+  }
+
+  .generalSkills__title-small {
+    font-size: 5vw;
+  }
+
+  .specializedSkills__list {
+    margin-right: 8.3vw;
+  }
+
+  .generalSkills__list {
+    margin-left: 8.3vw;
+    align-items: flex-start;
+  }
+
+  .specializedSkills__skill {
+    font-size: 4.1vw;
+  }
+
+  .generalSkills__skill {
+    font-size: 4.1vw;
+  }
+
+  .skills__circle-container:after {
+    border: none;
+  }
+
+  .skills__circle-container {
+    border: none;
+  }
+
+  .skills__circle-1 {
+    width: 56vw;
+    height: 56vw;
+    margin-right: 10px;
+  }
+
+  .skills__circle-2 {
+    width: 45vw;
+    height: 45vw;
+    margin: 10px 0 -30px 50px;
+  }
+
+  .skills__circle-3 {
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: -20px;
+    margin-top: -43px;
+    margin-right: 30px;
+  }
+
+  .skills__codingLAT_container {
+    margin-top: 60px;
+    border: none;
+  }
+
+  .skills__codingLAT_container::before {
+    content: "";
+    display: block;
+    width: 70%;
+    border-top: 3px solid rgba(199, 175, 201, 1);
+    right: 0;
+    margin-left: auto;
+  }
+
+  .codingLAT__title {
+    font-size: 9.3vw;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .codingLAT__skill {
+    font-size: 34px;
+    line-height: 60px;
+    text-align: right;
+    margin-right: 45px;
+  }
+
+  .skills__circle-4 {
+    width: 32vw;
+    height: 32vw;
+    margin-top: -65px;
+  }
+
+  .skills__circle-5 {
+    width: 50vw;
+    height: 50vw;
+    margin-top: 70px;
   }
 }

@@ -254,3 +254,26 @@
     border-right: solid 2px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .main__details-container {
+    height: 700px;
+  }
+
+  .main__title-details {
+    font-size: 24px;
+  }
+
+  .main__title-name {
+    font-size: 80px;
+  }
+
+  .main__details-text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-top: solid 2px;
+    margin-top: 300px;
+  }
+}
