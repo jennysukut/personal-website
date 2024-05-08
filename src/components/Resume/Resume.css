@@ -452,3 +452,94 @@
     padding-right: 20px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .resume {
+    display: block;
+  }
+
+  .resume__title-container {
+    border: none;
+  }
+
+  .resume__title-container:after {
+    border-bottom: 3px solid rgba(245, 240, 232, 1);
+  }
+
+  .resume__title {
+    margin-top: 50px;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .resume__skill-yrs-list {
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  .resume__skill-yrs-work {
+    font-size: 25px;
+  }
+
+  .resume__skill-yrs-timeline {
+    font-size: 22px;
+  }
+
+  .resume__skill-yrs:after {
+    border-bottom: 3px solid rgba(245, 240, 232, 1);
+  }
+
+  .resume__workExperience {
+    border: none;
+    padding-bottom: 50px;
+  }
+
+  .resume__workExperience_title {
+    font-size: 40px;
+    letter-spacing: 7px;
+    margin-left: 30px;
+  }
+
+  .resume__workExperience_list {
+    margin-left: 30px;
+  }
+
+  .workExperience__position {
+    font-size: 27px;
+  }
+
+  .workExperience__company {
+    font-size: 24px;
+  }
+
+  .workExperience__timeline {
+    font-size: 22px;
+  }
+
+  .resume__education {
+    margin: 0;
+    margin-right: 20px;
+    border-top: solid 2px;
+  }
+
+  .resume__education_title {
+    padding-top: 30px;
+    font-size: 40px;
+    letter-spacing: 7px;
+  }
+
+  .education__program {
+    font-size: 25px;
+  }
+
+  .education__school {
+    font-size: 22px;
+  }
+
+  .education__location {
+    font-size: 20px;
+  }
+}

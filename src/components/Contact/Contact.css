@@ -191,3 +191,9 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .contact_info {
+    font-size: 12px;
+  }
+}
