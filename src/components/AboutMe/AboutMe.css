@@ -242,7 +242,7 @@
 
 @media screen and (max-width: 500px) {
   .aboutMe {
-    font-size: 40px;
+    font-size: 45px;
     grid-template-columns: 100%;
   }
 
