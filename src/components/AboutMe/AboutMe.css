@@ -103,7 +103,7 @@
 
 .aboutMe {
   width: 100vw;
-  min-width: 100%;
+  /*  min-width: 100%;*/
   display: grid;
   grid-template-columns: 41.5% 58.5%;
   font-size: 24px;
@@ -111,7 +111,7 @@
   color: rgba(174, 158, 1, 1);
   background-color: rgba(245, 240, 232, 1);
   margin: 0;
-  padding-left: 4px;
+  padding: 0;
 }
 
 .aboutMe__empty-div {
@@ -120,7 +120,8 @@
 }
 
 .aboutMe__main {
-  margin-left: 75px;
+  margin-left: 50px;
+  margin-right: 50px;
   line-height: normal;
 }
 
@@ -148,6 +149,7 @@
 }
 
 .aboutMe__details {
+  font-size: 25px;
   margin-top: 35px;
 }
 
@@ -194,6 +196,7 @@
 
 .aboutMe__hobbies_list {
   margin-top: 15px;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -204,11 +207,6 @@
     margin-top: -1800px;
   }
 
-  .aboutMe__details {
-    font-size: 20px;
-    line-height: normal;
-  }
-
   .aboutMe__hobbies_list {
     font-size: 22px;
     line-height: 30px;
@@ -217,7 +215,7 @@
 
 @media screen and (max-width: 1200px) {
   .aboutMe__photo-and-details {
-    margin-top: -1900px;
+    margin-top: -2000px;
   }
 
   .aboutMe__details {
@@ -233,39 +231,83 @@
   .aboutMe {
     margin-right: 0px;
     margin-left: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .aboutMe__main {
-    margin-left: 35px;
-    padding-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .aboutMe__details {
+    font-size: 20px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .aboutMe__gradient-circle-1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .aboutMe__gradient-circle-2 {
+    width: 150px;
+    height: 150px;
+    margin-bottom: -155px;
+    margin-right: -127px;
+  }
+
+  .aboutMe__hobbies_list {
+    font-size: 20px;
+  }
+
+  .aboutMe__info {
+    font-size: 20px;
+  }
+
+  .aboutMe__photo-and-details {
+    margin-top: -2000px;
+    margin-left: 10px;
+  }
+
+  .aboutMe__photo {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .aboutMe__details {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .aboutMe {
     font-size: 45px;
     grid-template-columns: 100%;
   }
 
   .aboutMe__main {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
     padding-right: 0px;
   }
 
   .aboutMe__main_title {
-    font-size: 200px;
+    font-size: 80px;
     text-align: end;
+    margin-top: 50px;
+  }
+
+  .aboutMe__info {
+    font-size: 18px;
   }
 
   .aboutMe__photo {
-    width: 900px;
+    width: 300px;
   }
 
   .aboutMe__details {
-    font-size: 80px;
+    font-size: 25px;
   }
 
   .aboutMe__empty-div {
@@ -274,17 +316,22 @@
 
   .aboutMe__photo-and-details {
     border: none;
-    margin-top: -50px;
+    margin-top: 0px;
+  }
+
+  .aboutMe__gradientCircles {
+    align-self: center;
   }
 
   .aboutMe__gradient-circle-1 {
-    width: 900px;
-    height: 900px;
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
   }
 
   .aboutMe__gradient-circle-2 {
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
   }
 
   .aboutMe__hobbies {
@@ -292,11 +339,32 @@
   }
 
   .aboutMe__hobbies_list {
-    font-size: 50px;
+    font-size: 20px;
     line-height: normal;
   }
 
   .aboutMe__hobbies_title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutMe__main_title {
     font-size: 70px;
+  }
+
+  .aboutMe__main {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .aboutMe__info {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .aboutMe__gradient-circle-2 {
+    margin-left: 25px;
   }
 }

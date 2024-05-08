@@ -40,12 +40,12 @@
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .page {
-    display: none;
+    /*display: none;*/
   }
   .underConstructionMessage {
-    display: block;
+    /* display: block;*/
     background-image: url("../../images/GradientBackgroundMain.svg");
     background-size: cover;
     width: 100vw;

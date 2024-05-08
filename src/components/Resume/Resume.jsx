@@ -34,7 +34,7 @@ function Resume() {
 
     {
       position: "Owner & Artisan",
-      company: "Color.Fully.Curated",
+      company: "Color.Fully. Curated",
       timeline: "2021-2023",
     },
 
