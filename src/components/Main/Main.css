@@ -220,6 +220,7 @@
 @media screen and (max-width: 500px) {
   .main__details-container {
     height: 600px;
+    grid-template-columns: 30% 70%;
   }
 
   .main__title-name {

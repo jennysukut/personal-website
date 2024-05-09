@@ -23,7 +23,7 @@ function Resume() {
     {
       position: "Web Designer, Business Assistant, & Sushi Roller",
       company: "Indah Sushi",
-      timeline: "2016-2017",
+      timeline: "2017",
     },
 
     {
